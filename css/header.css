@@ -1,0 +1,42 @@
+@charset 'utf-8';
+#header {
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+#header nav {
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .logo {
+    display: flex;
+}
+#header .logo a:nth-child(1) {
+    display: block;
+    width: 5rem;
+    height: 5rem;
+}
+#header .logo a {
+    display: block;
+    width: 18.8rem;
+    height: 5rem;
+}
+#header .gnb {
+    display: flex;
+    justify-content: space-between;
+}
+#header .gnb li a {
+    display: block;
+    width: 10rem;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    font-family: "MapoBackpacking";
+}
+#header .util-menu {
+    display: flex;
+    gap: 1rem;
+}

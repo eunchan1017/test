@@ -1,0 +1,78 @@
+.inner {
+    width: 73.9583%;
+    margin: 0 auto;
+    /* background: #f55; */
+}
+#hero {
+    position: relative;
+    width: 100%;
+    height: 108rem;
+}
+.hero-visual {
+    width: 100%;
+    height: 100%;
+    background: url(../img/visual-img.webp) no-repeat 0 0 / cover;
+}
+.hero-logo {
+    position: absolute;
+    top: 7rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hero-logo a {
+    position: absolute;
+    top: 90.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 18rem;
+    height: 6rem;
+    background: #fff;
+    border-radius: 4px;
+    font: 4.8rem "YouMurderer BB", sans-serif;
+    color: #000;
+}
+.sec-title {
+    font: 9.6rem "Belisa plumilla manual", sans-serif;
+    width: 100%;
+}
+#intro {
+    width: 100%;
+    text-align: center;
+    height: 90rem;
+}
+#intro .sec-title {
+    margin: 12rem auto 0;
+}
+#intro p {
+    font-size: 2rem;
+}
+#intro figure {
+    width: 69rem;
+    height: 40rem;
+    margin: 6rem auto;
+    background: #000;
+    position: relative;
+    cursor: pointer;
+}
+#intro figure::after {
+    content: "";
+    position: absolute;
+    background: url(../img/ico-start.png) no-repeat 0 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8rem;
+    height: 8rem;
+}
+#intro figure::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
