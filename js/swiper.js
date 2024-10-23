@@ -2,19 +2,13 @@ const featureSlider = new Swiper(".feature-slider", {
     loop: true,
     slidesPerView: 3,
     spaceBetween: 40,
-    // If we need pagination
+    centeredSlides: true,
     pagination: {
         el: "#feature .pagination",
+        clickable: true,
     },
-
-    // Navigation arrows
     navigation: {
         nextEl: "#feature .btn-next",
         prevEl: "#feature .btn-prev",
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: ".swiper-scrollbar",
     },
 });

@@ -38,6 +38,8 @@
     font: 9.6rem "Belisa plumilla manual", sans-serif;
     width: 100%;
     text-align: center;
+    position: relative;
+    z-index: 10;
 }
 #intro {
     width: 100%;
@@ -48,7 +50,7 @@
     margin: 12rem auto 0;
 }
 #intro p {
-    font-size: 2rem;
+    font: 2rem/1.8 sans-serif;
 }
 #intro figure {
     width: 69rem;
@@ -81,15 +83,35 @@
     width: 100%;
     height: 108rem;
     position: relative;
+    padding: 16.8rem 0 0;
 }
+#feature .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/feature1.jpg) no-repeat 0 0 / cover;
+}
+
+#feature::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
 #feature .sec-title {
-    margin: 16.8rem auto 9rem;
+    margin: 0 auto 9rem;
 }
 /* slide style */
 .feature-list {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    justify-content: space-between;
     text-align: center;
     width: 44.6rem;
     height: 42rem;
@@ -97,4 +119,65 @@
 .feature-list figure {
     width: 100%;
     height: 28rem;
+}
+.feature-list h4 {
+    font-size: 3.2rem;
+    color: var(--main-color);
+    font-family: "MapoBackpacking";
+}
+.feature-list p {
+    font: 2rem/1.8 sans-serif;
+}
+/* swiper code */
+
+#feature .pagination {
+    position: absolute;
+    bottom: 22rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    border-radius: 0;
+    gap: 1rem;
+}
+#feature .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #999;
+}
+#feature .swiper-pagination-bullet-active {
+    background: var(--main-color);
+}
+
+#feature .btn-prev {
+    position: absolute;
+    left: 10rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    width: 10rem;
+    height: 10rem;
+    z-index: 10;
+    background: url(../img/arrow.png) no-repeat 0 0 / cover;
+}
+#feature .btn-prev {
+    position: absolute;
+    left: 10rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    width: 8rem;
+    height: 8rem;
+    z-index: 10;
+    background: url(../img/arrow.png) no-repeat 0 0 / cover;
+}
+#feature .btn-next {
+    position: absolute;
+    right: 10rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    width: 8rem;
+    height: 8rem;
+    z-index: 10;
+    background: url(../img/arrow.png) no-repeat 0 0 / cover;
 }

@@ -5,7 +5,7 @@
 @import url("https://fonts.cdnfonts.com/css/youmurderer-bb");
 :root {
     --white-color: #fff;
-    --main-btn-color: #ff1515;
+    --main-color: #feffa4;
     --black-color: #000;
     --text-color: #666;
 }
@@ -15,7 +15,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font: 1.6rem/1.8 Pretendard, sans-serif;
+    font: 1.6rem/1.4 Pretendard, sans-serif;
     color: var(--black-color);
     text-transform: capitalize;
     word-break: keep-all; /* wbka  */
