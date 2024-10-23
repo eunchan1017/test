@@ -37,6 +37,7 @@
 .sec-title {
     font: 9.6rem "Belisa plumilla manual", sans-serif;
     width: 100%;
+    text-align: center;
 }
 #intro {
     width: 100%;
@@ -75,4 +76,25 @@
     bottom: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.4);
+}
+#feature {
+    width: 100%;
+    height: 108rem;
+    position: relative;
+}
+#feature .sec-title {
+    margin: 16.8rem auto 9rem;
+}
+/* slide style */
+.feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    width: 44.6rem;
+    height: 42rem;
+}
+.feature-list figure {
+    width: 100%;
+    height: 28rem;
 }
