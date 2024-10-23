@@ -189,3 +189,86 @@
     z-index: 10;
     background: url(../img/arrow.png) no-repeat 0 0 / cover;
 }
+#character {
+    width: 100%;
+    height: 108rem;
+    background: url(../img/character-bg.png) no-repeat 0 40% / cover;
+    padding: 24rem 0 0;
+}
+#character .sec-title {
+}
+/* slider style */
+.character-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 69rem;
+    height: 46.4rem;
+    margin: 2rem auto 0;
+}
+.character-img {
+    width: 32.5rem;
+    height: 46.4rem;
+}
+.character-info-wrap {
+    width: 32.5rem;
+    height: 46.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.character-name h4 {
+    font-size: 2.8rem;
+    font-family: "MapoBackpacking", serif;
+    color: var(--main-color);
+}
+.character-name p {
+    font-size: 2.4rem;
+    font-family: "MapoBackpacking", serif;
+    margin-bottom: 2rem;
+}
+.character-info-wrap > p {
+    font-size: 2rem;
+    font-family: "MapoBackpacking", serif;
+}
+.character-info-wrap > p + p {
+    margin-top: 1rem;
+}
+.character-info-wrap .ico-img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+.character-info-wrap .ico-img img {
+    width: 7rem;
+    height: 7rem;
+}
+.character-info-wrap .wrap {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 2rem;
+}
+/* character-select-background */
+.character-select-background {
+    position: relative;
+    width: 14rem;
+    aspect-ratio: 1/1.25;
+    background: url(../img/character-select-background.png) no-repeat 50% / cover;
+}
+.character-select-background .ico-character {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -36%);
+    width: 8rem;
+    aspect-ratio: 1/1;
+    background: no-repeat 50% / cover;
+}
+.character-select-background .wilson {
+    background-image: url(../img/character/char1.webp);
+}
