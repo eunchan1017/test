@@ -20,6 +20,24 @@ const featureSlider = new Swiper(".feature-slider", {
         },
     },
 });
+var characterSelect = new Swiper(".character-select", {
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
+var characterScreen = new Swiper(".character-screen", {
+    spaceBetween: 10,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: characterSelect,
+    },
+  });
+
+
 
 function updateBackground(swiper) {
     const activeSlide = swiper.slides[swiper.activeIndex];

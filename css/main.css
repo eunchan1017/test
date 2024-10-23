@@ -228,14 +228,14 @@
 .character-name p {
     font-size: 2.4rem;
     font-family: "MapoBackpacking", serif;
-    margin-bottom: 2rem;
 }
 .character-info-wrap > p {
-    font-size: 2rem;
-    font-family: "MapoBackpacking", serif;
+    font-size: 1.6rem;
 }
-.character-info-wrap > p + p {
+.character-info-wrap > .character-comment {
+    font-size: 2rem;
     margin-top: 1rem;
+    font-family: "MapoBackpacking",serif;
 }
 .character-info-wrap .ico-img {
     width: 100%;
