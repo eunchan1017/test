@@ -21,24 +21,25 @@ const featureSlider = new Swiper(".feature-slider", {
     },
 });
 var characterSelect = new Swiper(".character-select", {
-    spaceBetween: 10,
-    slidesPerView: 4,
+    loop: true,
+    // spaceBetween: 10,
+    slidesPerView: 6,
     freeMode: true,
     watchSlidesProgress: true,
 });
 var characterScreen = new Swiper(".character-screen", {
-    spaceBetween: 10,
+    loop: true,
+    effect: true,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+        nextEl: ".character-wrap .btn-next",
+        prevEl: ".character-wrap .btn-prev",
     },
     thumbs: {
-      swiper: characterSelect,
+        swiper: characterSelect,
     },
-  });
+});
 
-
-
+/** 활성화 되있는 이미지로 배경 적용 함수 */
 function updateBackground(swiper) {
     const activeSlide = swiper.slides[swiper.activeIndex];
     const backgroundImage = activeSlide.dataset.background;

@@ -194,6 +194,7 @@
     height: 108rem;
     background: url(../img/character-bg.png) no-repeat 0 40% / cover;
     padding: 24rem 0 0;
+    position: relative;
 }
 #character .sec-title {
 }
@@ -229,19 +230,24 @@
     font-size: 2.4rem;
     font-family: "MapoBackpacking", serif;
 }
-.character-info-wrap > p {
-    font-size: 1.6rem;
-}
 .character-info-wrap > .character-comment {
     font-size: 2rem;
     margin-top: 1rem;
-    font-family: "MapoBackpacking",serif;
+    font-family: "MapoBackpacking", serif;
+}
+.character-info-wrap .character-feature {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    /* font-family: "MapoBackpacking", serif; */
+    font-size: 2rem;
 }
 .character-info-wrap .ico-img {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 .character-info-wrap .ico-img img {
     width: 7rem;
@@ -258,7 +264,36 @@
     position: relative;
     width: 14rem;
     aspect-ratio: 1/1.25;
+    margin: 0 auto;
     background: url(../img/character-select-background.png) no-repeat 50% / cover;
+}
+/* active 효과 */
+.character-select .swiper-slide-thumb-active .character-select-background {
+    background-image: url(../img/character-select-background-active.png);
+    width: 16rem;
+}
+/* 버튼 디자인  */
+#character .btn-prev {
+    position: absolute;
+    top: 50%;
+    left: 45rem;
+    transform: rotate(180deg);
+    width: 8rem;
+    height: 8rem;
+    background: url(../img/arrow.png) no-repeat 0 0 / cover;
+    z-index: 10;
+    cursor: pointer;
+}
+#character .btn-next {
+    position: absolute;
+    top: 50%;
+    right: 45rem;
+    transform: rotate(0deg);
+    width: 8rem;
+    height: 8rem;
+    background: url(../img/arrow.png) no-repeat 0 0 / cover;
+    z-index: 10;
+    cursor: pointer;
 }
 .character-select-background .ico-character {
     position: absolute;
@@ -269,6 +304,8 @@
     aspect-ratio: 1/1;
     background: no-repeat 50% / cover;
 }
+
+/* character-img */
 .character-select-background .wilson {
     background-image: url(../img/character/char1.webp);
 }
@@ -276,5 +313,50 @@
     background-image: url(../img/character/char2.webp);
 }
 .character-select-background .wolfgang {
-    background-image: url(../img/character/char2.webp);
+    background-image: url(../img/character/char3.webp);
+}
+.character-select-background .wendy {
+    background-image: url(../img/character/char4.webp);
+}
+.character-select-background .wx-78 {
+    background-image: url(../img/character/char5.webp);
+}
+.character-select-background .wickerbottom {
+    background-image: url(../img/character/char6.webp);
+}
+.character-select-background .woodie {
+    background-image: url(../img/character/char7.webp);
+}
+.character-select-background .wes {
+    background-image: url(../img/character/char8.webp);
+}
+.character-select-background .maxwell {
+    background-image: url(../img/character/char9.webp);
+}
+.character-select-background .wigfrid {
+    background-image: url(../img/character/char10.webp);
+}
+.character-select-background .webber {
+    background-image: url(../img/character/char11.webp);
+}
+.character-select-background .warly {
+    background-image: url(../img/character/char12.webp);
+}
+.character-select-background .wormwood {
+    background-image: url(../img/character/char13.webp);
+}
+.character-select-background .winona {
+    background-image: url(../img/character/char14.webp);
+}
+.character-select-background .walter {
+    background-image: url(../img/character/char15.webp);
+}
+.character-select-background .wortox {
+    background-image: url(../img/character/char17.webp);
+}
+.character-select-background .wurt {
+    background-image: url(../img/character/char18.webp);
+}
+.character-select-background .wanda {
+    background-image: url(../img/character/char19.webp);
 }
