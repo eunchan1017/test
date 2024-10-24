@@ -26,6 +26,7 @@ var characterSelect = new Swiper(".character-select", {
     slidesPerView: 6,
     freeMode: true,
     watchSlidesProgress: true,
+    allowTouchMove: false,
 });
 var characterScreen = new Swiper(".character-screen", {
     loop: true,
@@ -38,7 +39,6 @@ var characterScreen = new Swiper(".character-screen", {
         swiper: characterSelect,
     },
 });
-
 /** 활성화 되있는 이미지로 배경 적용 함수 */
 function updateBackground(swiper) {
     const activeSlide = swiper.slides[swiper.activeIndex];
