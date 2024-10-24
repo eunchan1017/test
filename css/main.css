@@ -374,8 +374,8 @@
     gap: 4rem;
 }
 .trailer-wrap li {
-    width: 32rem;
-    height: 25rem;
+    width: 22.8873%;
+    aspect-ratio: 1.3/1;
     position: relative;
     z-index: 1;
     cursor: pointer;
@@ -451,4 +451,66 @@
     border: none;
     cursor: pointer;
     color: #fff;
+}
+#reviews {
+    width: 100%;
+    height: 108rem;
+    background: url(../img/moon-back.jpg) no-repeat 0 0 / cover;
+    position: relative;
+}
+#reviews .dim {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+#reviews .sec-title {
+    padding-top: 18rem;
+}
+#reviews .reviews-wrap {
+    margin-top: 14.6rem;
+}
+#reviews .reviews-card {
+    width: 100%;
+    aspect-ratio: 1/0.515695067264574;
+    padding: 5rem 4rem;
+    background: rgba(69, 54, 39, 0.2);
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#reviews .reviews-card .star-wrap {
+    display: flex;
+    justify-content: center;
+}
+#reviews .btn-review-write {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 6rem;
+    background: #000;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    margin: 12.2rem auto;
+    gap: 1rem;
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+#reviews .nickname {
+    font-weight: 700;
+    font-size: 2rem;
+    padding-top: 1rem;
+    color: var(--main-color);
+}
+#reviews .img-size {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+#reviews .reviews-card p {
+    padding-top: 1.5rem;
 }

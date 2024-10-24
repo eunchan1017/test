@@ -1,0 +1,30 @@
+#footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.foot-logo {
+    margin-top: 8rem;
+    width: 24.3rem;
+    height: 5rem;
+    display: flex;
+}
+.sns {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 20rem;
+}
+.copyright-wrap {
+    margin-top: 4rem;
+    text-align: center;
+}
+.ko-wrap {
+    display: flex;
+    gap: 1rem;
+}
+.copyright {
+    padding: 1rem 0 8rem;
+}
