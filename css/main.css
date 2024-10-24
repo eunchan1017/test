@@ -360,3 +360,42 @@
 .character-select-background .wanda {
     background-image: url(../img/character/char19.webp);
 }
+/* trailer  */
+#trailer {
+    width: 100%;
+    height: 108rem;
+}
+#trailer .sec-title {
+    margin: 15.4rem 0 10rem;
+}
+.trailer-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+.trailer-wrap li {
+    width: 32rem;
+    height: 25rem;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+.trailer-wrap li::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/ico-start.png) no-repeat 0 0 / cover;
+    width: 6rem;
+    height: 6rem;
+}
+.trailer-wrap li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
