@@ -1,39 +1,51 @@
 .inner {
-    width: 73.9583%;
+    width: 73.95833333333333%;
     margin: 0 auto;
     /* background: #f55; */
 }
 #hero {
     position: relative;
     width: 100%;
-    height: 108rem;
+    aspect-ratio: 16/9;
+    overflow: hidden;
 }
 .hero-visual {
     width: 100%;
     height: 100%;
-    background: url(../img/visual-img.webp) no-repeat 0 0 / cover;
+    background: url(../img/big-background.jpg) no-repeat 50% / cover;
+}
+/* 히어로 동작 제어 */
+#hero .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(../img/tree-background.png) no-repeat 50% / cover;
+}
+#hero .wilson {
+    position: absolute;
+    left: 1rem;
+    top: 38rem;
+    z-index: 100;
+    width: 70rem;
+    aspect-ratio: 753/700;
+    background: url(../img/wilson.png) no-repeat 50% 50% / cover;
+}
+#hero .willow {
+    position: absolute;
+    right: 1rem;
+    top: 38rem;
+    z-index: 100;
+    width: 70rem;
+    aspect-ratio: 753/700;
+    background: url(../img/Willow.png) no-repeat 50% 50% / cover;
 }
 .hero-logo {
     position: absolute;
-    top: 7rem;
+    top: 30rem;
     left: 50%;
     transform: translateX(-50%);
 }
-.hero-logo a {
-    position: absolute;
-    top: 90.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 18rem;
-    height: 6rem;
-    background: #fff;
-    border-radius: 4px;
-    font: 4.8rem "YouMurderer BB", sans-serif;
-    color: #000;
-}
+
 .sec-title {
     font: 9.6rem "Belisa plumilla manual", sans-serif;
     width: 100%;
@@ -47,7 +59,7 @@
     height: 90rem;
 }
 #intro .sec-title {
-    margin: 12rem auto 0;
+    margin: 12rem auto 2rem;
 }
 #intro p {
     font: 2rem/1.8 sans-serif;
@@ -84,7 +96,7 @@
 }
 #feature {
     width: 100%;
-    height: 108rem;
+    aspect-ratio: 16/9;
     position: relative;
     padding: 16.8rem 0 0;
 }
@@ -191,7 +203,7 @@
 }
 #character {
     width: 100%;
-    height: 108rem;
+    aspect-ratio: 16/9;
     background: url(../img/character-bg.png) no-repeat 0 40% / cover;
     padding: 24rem 0 0;
     position: relative;
@@ -363,7 +375,7 @@
 /* trailer  */
 #trailer {
     width: 100%;
-    height: 108rem;
+    aspect-ratio: 16/9;
 }
 #trailer .sec-title {
     margin: 15.4rem 0 10rem;
@@ -374,7 +386,7 @@
     gap: 4rem;
 }
 .trailer-wrap li {
-    width: 22.8873%;
+    width: 22.8%;
     aspect-ratio: 1.3/1;
     position: relative;
     z-index: 1;
@@ -454,9 +466,46 @@
 }
 #reviews {
     width: 100%;
-    height: 108rem;
+    aspect-ratio: 16/9;
     background: url(../img/moon-back.jpg) no-repeat 0 0 / cover;
     position: relative;
+}
+#reviews .btn-next {
+    position: absolute;
+    right: 10rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(0deg);
+    width: 8rem;
+    height: 8rem;
+    z-index: 10;
+    background: url(../img/arrow.png) no-repeat 0 0 / cover;
+}
+#reviews .btn-prev {
+    position: absolute;
+    left: 10rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    width: 8rem;
+    height: 8rem;
+    z-index: 10;
+    background: url(../img/arrow.png) no-repeat 0 0 / cover;
+}
+#reviews .pagination {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 1rem;
+}
+#reviews .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #999;
+}
+#reviews .swiper-pagination-bullet-active {
+    background: var(--main-color);
 }
 #reviews .dim {
     position: absolute;
@@ -513,4 +562,5 @@
 }
 #reviews .reviews-card p {
     padding-top: 1.5rem;
+    line-height: 1.8;
 }

@@ -51,11 +51,11 @@ const reviewsSlider = new Swiper(".reviews-slider", {
     spaceBetween: 40,
     centeredSlides: true,
     pagination: {
-        el: "#feature .pagination",
+        el: "#reviews .pagination",
         clickable: true,
     },
     navigation: {
-        nextEl: "#feature .btn-next",
-        prevEl: "#feature .btn-prev",
+        nextEl: "#reviews .btn-next",
+        prevEl: "#reviews .btn-prev",
     },
 });

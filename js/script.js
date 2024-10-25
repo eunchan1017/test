@@ -1,11 +1,56 @@
 // 대상을 변수에 저장
-const $dim = $(".dim");
+const $window = $(window);
+const $dim = $("#trailer .dim");
 const $videoWrap = $(".video-wrap");
 const $video = $(".video iframe");
-const $caption = $(".caption ");
 const $btnClose = $(".btn-close ");
 const $videoItem = $(".trailer-wrap li");
+const $background = $("#hero .background");
+const wilson = $("#hero .wilson");
+const willow = $("#hero .willow");
+const introImg = $("#intro figure");
+// 마우스 좌표값
+let x = 0;
+let y = 0;
 
+// 보정된 값
+let mx = 0;
+let my = 0;
+
+let raf;
+/** 마우스 좌표를 구하고 시작점을 화면 정중앙으로 세팅하는 함수  */
+function getOffset() {
+    // 마우스가 움직이면 좌표를 구하고 시작점을 화면의 정중앙으로 세팅
+    $window.on("mousemove", (e) => {
+        x = e.pageX - $window.outerWidth() / 2;
+        y = e.pageY - $window.outerHeight() / 2;
+    });
+}
+// 움직임 구현
+function moving() {
+    let speed = 0.002;
+    // 좌표값 보정
+    mx += (x - mx) * speed;
+    my += (y - my) * speed;
+    // 대상에 적용
+    wilson.css({
+        transform: `translate3d(${-mx * 0.5}px, ${my * 0.5}px, ${my}px)`,
+    });
+    willow.css({
+        transform: `translate3d(${mx * 0.5}px, ${-my * 0.5}px, ${mx}px)`,
+    });
+    $background.css({
+        transform: `translate3d(${mx * 0.5}px,0px,${mx * 0.05}px)`,
+        filter: `blur(${mx * 0.08}px)`,
+    });
+    // 부드럽게 반복
+    raf = requestAnimationFrame(moving);
+}
+function initAnimation() {
+    getOffset();
+    // moving();
+}
+// initAnimation();
 // 비디오 리스트를 선택했을 때
 $videoItem.on("click", function () {
     // console.log($videoItem, $(this));
@@ -22,11 +67,6 @@ $videoItem.on("click", function () {
     // 팝업창 띄우기
     $dim.fadeIn();
     $videoWrap.addClass("active");
-    // 대상을 videoText변수에 텍스트 저장
-    const videoTitle = $(this).text();
-    // videoText변수에 텍스트 적용
-    $caption.text(videoTitle);
-    console.log($videoItem);
 });
 $btnClose.on("click", () => {
     // 팝업창 닫기
@@ -34,4 +74,15 @@ $btnClose.on("click", () => {
     $videoWrap.removeClass("active");
     // 동영상 속성 삭제
     $video.attr("src", "");
+});
+// scroll-area의 위치값 구하기
+const targetPos = $("#intro").offset().top;
+//스크롤이 발생하면
+$window.on("scroll", function () {
+    const scrollTop = $(this).scrollTop();
+    console.log(targetPos, scroll);
+    // 스크롤 값이 scroll-area의 위치 값보다 커지면 애니메이션 중지
+    if (scrollTop >= targetPos) cancelAnimationFrame(raf);
+    // 상단으로 이동하면 애니메이션 실행
+    if (scrollTop === 0) initAnimation();
 });
