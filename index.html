@@ -16,6 +16,21 @@
         <script src="./js/script.js" defer></script>
     </head>
     <body>
+        <div class="popup-wrap">
+            <div class="intro-dim"></div>
+            <div class="intro-video-wrap">
+                <div class="video">
+                    <iframe
+                        src="https://www.youtube.com/embed/bVbyn7c1X6E"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; mute;"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                <button class="btn-close"></button>
+            </div>
+        </div>
         <header id="header">
             <div class="inner">
                 <nav>
@@ -46,6 +61,7 @@
                     <div class="char-wrap-back">
                         <div class="wilson"></div>
                         <div class="willow"></div>
+                        <div class="boss"></div>
                     </div>
                 </div>
                 <h2 class="hero-logo">
@@ -53,7 +69,6 @@
                 </h2>
             </section>
             <section id="intro">
-                <div class="background"></div>
                 <h3 class="sec-title">Survive the Unknown, or Perish in the Dark</h3>
                 <div class="inner">
                     <p>
@@ -61,7 +76,9 @@
                         자원을 모아 불을 피우고, 자신을 지킬 방법을 찾아야만 합니다. <br />
                         생존은 당신의 선택에 달렸습니다, 끝까지 버틸 수 있을까요?
                     </p>
-                    <figure><img src="./img/together-trailer.jpg" alt="intro-img" /></figure>
+                    <figure data-link="https://www.youtube.com/embed/bVbyn7c1X6E">
+                        <img src="./img/together-trailer.jpg" alt="intro-img" />
+                    </figure>
                 </div>
             </section>
             <figure class="brush-line">

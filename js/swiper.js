@@ -25,7 +25,7 @@ var characterSelect = new Swiper(".character-select", {
     // spaceBetween: 10,
     slidesPerView: 6,
     freeMode: true,
-    watchSlidesProgress: true,
+    watchSlidesProgress: false,
     allowTouchMove: false,
 });
 var characterScreen = new Swiper(".character-screen", {

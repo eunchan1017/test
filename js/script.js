@@ -8,7 +8,7 @@ const $videoItem = $(".trailer-wrap li");
 const $background = $("#hero .background");
 const wilson = $("#hero .wilson");
 const willow = $("#hero .willow");
-const introImg = $("#intro figure");
+
 // 마우스 좌표값
 let x = 0;
 let y = 0;
@@ -46,10 +46,10 @@ function moving() {
     // 부드럽게 반복
     raf = requestAnimationFrame(moving);
 }
-function initAnimation() {
-    getOffset();
-    // moving();
-}
+// function initAnimation() {
+//     getOffset();
+//     moving();
+// }
 // initAnimation();
 // 비디오 리스트를 선택했을 때
 $videoItem.on("click", function () {
@@ -63,7 +63,6 @@ $videoItem.on("click", function () {
     videoLink += "?autoplay=1";
     // iframe의 src 값으로 videoLink를 전달
     $video.attr("src", videoLink);
-    console.log(videoLink);
     // 팝업창 띄우기
     $dim.fadeIn();
     $videoWrap.addClass("active");
@@ -85,4 +84,20 @@ $window.on("scroll", function () {
     if (scrollTop >= targetPos) cancelAnimationFrame(raf);
     // 상단으로 이동하면 애니메이션 실행
     if (scrollTop === 0) initAnimation();
+});
+const introImg = $("#intro figure");
+const introDim = $(".intro-dim ");
+const introVideoWrap = $(".intro-video-wrap");
+const introBtnClose = $(".intro-video-wrap .btn-close");
+const video = $(".intro-video-wrap .video iframe");
+introImg.on("click", () => {
+    let videoLink = introImg.attr("data-link");
+    videoLink += "?autoplay=1";
+    video.attr("src", videoLink);
+    introDim.fadeIn();
+    introVideoWrap.addClass("active");
+});
+introBtnClose.on("click", () => {
+    introDim.fadeOut();
+    introVideoWrap.removeClass("active");
 });
