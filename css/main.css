@@ -37,6 +37,15 @@
     aspect-ratio: 753/700;
     background: url(../img/Willow.png) no-repeat 50% 50% / cover;
 }
+#hero .Gomsol {
+    position: absolute;
+    top: 55rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100rem;
+    aspect-ratio: 1/1;
+    background: url(../img/season1-boss.webp) no-repeat 50% 50% / cover;
+}
 .hero-logo {
     position: absolute;
     top: 30rem;
@@ -584,16 +593,28 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     width: 20rem;
     height: 6rem;
     background: #000;
     color: #fff;
-    position: relative;
     z-index: 1;
     margin: 12.2rem auto;
     gap: 1rem;
     font-weight: 700;
     font-size: 2.4rem;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+#reviews .btn-review-write .img-size {
+    background: url(../img/review-write.png) no-repeat 0 0 / cover;
+}
+#reviews .btn-review-write:hover .img-size {
+    background-image: url(../img/review-write-hover.png);
+}
+#reviews .btn-review-write:hover {
+    background: #fff;
+    color: #000;
 }
 #reviews .nickname {
     font-weight: 700;

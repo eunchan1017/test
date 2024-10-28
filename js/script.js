@@ -8,6 +8,7 @@ const $videoItem = $(".trailer-wrap li");
 const $background = $("#hero .background");
 const wilson = $("#hero .wilson");
 const willow = $("#hero .willow");
+const heroLogo = $("#hero .hero-logo");
 
 // 마우스 좌표값
 let x = 0;
@@ -22,35 +23,42 @@ let raf;
 function getOffset() {
     // 마우스가 움직이면 좌표를 구하고 시작점을 화면의 정중앙으로 세팅
     $window.on("mousemove", (e) => {
+        // x = e.pageX - Math.max(-100, Math.min(100, e.pageX - $window.innerWidth() / 2));
+        // y = e.pageY - Math.max(-10, Math.min(50, e.pageY - $window.outerHeight() / 2));
         x = e.pageX - $window.outerWidth() / 2;
         y = e.pageY - $window.outerHeight() / 2;
     });
 }
 // 움직임 구현
 function moving() {
-    let speed = 0.002;
+    let speed = 0.001;
     // 좌표값 보정
     mx += (x - mx) * speed;
     my += (y - my) * speed;
+    console.log(mx, my);
+    // 부드럽게 반복
+    raf = requestAnimationFrame(moving);
+
     // 대상에 적용
     wilson.css({
         transform: `translate3d(${-mx * 0.5}px, ${my * 0.5}px, ${my}px)`,
     });
     willow.css({
-        transform: `translate3d(${mx * 0.5}px, ${-my * 0.5}px, ${mx}px)`,
+        transform: `translate3d(${mx * 0.5}px, ${my * 0.5}px, ${mx}px)`,
     });
     $background.css({
         transform: `translate3d(${mx * 0.5}px,0px,${mx * 0.05}px)`,
-        filter: `blur(${mx * 0.08}px)`,
     });
-    // 부드럽게 반복
-    raf = requestAnimationFrame(moving);
+    heroLogo.css({
+        transform: `translate(-50%,${my * 0.8}px)`,
+    });
 }
-// function initAnimation() {
-//     getOffset();
-//     moving();
-// }
-// initAnimation();
+
+function initAnimation() {
+    getOffset();
+    moving();
+}
+initAnimation();
 // 비디오 리스트를 선택했을 때
 $videoItem.on("click", function () {
     // console.log($videoItem, $(this));
