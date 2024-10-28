@@ -93,6 +93,7 @@ $window.on("scroll", function () {
     // 상단으로 이동하면 애니메이션 실행
     if (scrollTop === 0) initAnimation();
 });
+
 const introImg = $("#intro figure");
 const introDim = $(".intro-dim ");
 const introVideoWrap = $(".intro-video-wrap");
