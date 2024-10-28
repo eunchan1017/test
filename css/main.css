@@ -116,7 +116,8 @@
     margin: 12rem auto 2rem;
 }
 #intro p {
-    font: 2rem/1.8 sans-serif;
+    font-size: 2rem;
+    line-height: 1.8;
 }
 #intro figure {
     width: 69rem;
@@ -216,7 +217,8 @@
     font-family: "MapoBackpacking";
 }
 .feature-list p {
-    font: 2rem/1.8 sans-serif;
+    font-size: 2rem;
+    line-height: 1.8;
 }
 /* swiper code */
 

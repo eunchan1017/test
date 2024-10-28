@@ -41,10 +41,10 @@ function moving() {
 
     // 대상에 적용
     wilson.css({
-        transform: `translate3d(${-mx * 0.5}px, ${my * 0.5}px, ${my}px)`,
+        transform: `translate3d(${-mx * 0.8}px, ${my * 0.05}px, ${my}px)`,
     });
     willow.css({
-        transform: `translate3d(${mx * 0.5}px, ${my * 0.5}px, ${mx}px)`,
+        transform: `translate3d(${mx * 0.8}px, ${my * 0.05}px, ${mx}px)`,
     });
     $background.css({
         transform: `translate3d(${mx * 0.5}px,0px,${mx * 0.05}px)`,
