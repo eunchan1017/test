@@ -12,3 +12,145 @@ body {
     width: 90%;
     margin: 0 auto;
 }
+#character {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10rem auto 5rem;
+    /* height: 20rem; */
+    position: relative;
+}
+#character .top-character-slider {
+    height: 100%;
+}
+#character .character-card {
+    width: 10rem;
+    height: 10rem;
+    background: no-repeat 0% / cover;
+    background-image: url(../img/pain.png);
+    position: relative;
+    margin: 0 auto;
+}
+#character .swiper-slide:nth-child(1) .character-card {
+    background-image: url(../img/pain-on.png);
+}
+#character .swiper-slide:hover .character-card {
+    background-image: url(../img/pain-on.png);
+}
+
+#character .character-card .character {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    width: 7rem;
+    height: 7rem;
+    transform: translate(-50%, -50%);
+    background: no-repeat 0 / cover;
+}
+#character .btn-prev {
+    position: absolute;
+    left: -2rem;
+    top: 40%;
+    transform: translateY(-50%);
+    transform: rotate(225deg);
+    width: 30px;
+    height: 30px;
+    border-top: 5px solid #000;
+    border-right: 5px solid #000;
+}
+#character .btn-next {
+    position: absolute;
+    right: -2rem;
+    top: 40%;
+    transform: translateY(-50%);
+    transform: rotate(45deg);
+    width: 30px;
+    height: 30px;
+    border-top: 5px solid #000;
+    border-right: 5px solid #000;
+}
+#character .btn-next.swiper-button-disabled,
+#character .btn-prev.swiper-button-disabled {
+    opacity: 0.3;
+}
+#character .character-card .character.Wilson {
+    background-image: url(../img/character/char1.webp);
+}
+#character .character-card .character.Willow {
+    background-image: url(../img/character/char2.webp);
+}
+#character .character-card .character.Wolfgang {
+    background-image: url(../img/character/char3.webp);
+}
+#character .character-card .character.Wendy {
+    background-image: url(../img/character/char4.webp);
+}
+#character .character-card .character.xw-78 {
+    background-image: url(../img/character/char5.webp);
+}
+#character .character-card .character.Wickerbottom {
+    background-image: url(../img/character/char6.webp);
+}
+#character .character-card .character.Woodie {
+    background-image: url(../img/character/char7.webp);
+}
+#character .character-card .character.Wes {
+    background-image: url(../img/character/char8.webp);
+}
+#character .character-card .character.Maxwell {
+    background-image: url(../img/character/char9.webp);
+}
+#character .character-card .character.Wigfrid {
+    background-image: url(../img/character/char10.webp);
+}
+#character .character-card .character.Webber {
+    background-image: url(../img/character/char11.webp);
+}
+#character .character-card .character.Warly {
+    background-image: url(../img/character/char12.webp);
+}
+#character .character-card .character.Wormwood {
+    background-image: url(../img/character/char13.webp);
+}
+#character .character-card .character.Winona {
+    background-image: url(../img/character/char14.webp);
+}
+#character .character-card .character.Walter {
+    background-image: url(../img/character/char15.webp);
+}
+#character .character-card .character.Wortox {
+    background-image: url(../img/character/char17.webp);
+}
+#character .character-card .character.Wurt {
+    background-image: url(../img/character/char18.webp);
+}
+#character .character-card .character.Wanda {
+    background-image: url(../img/character/char19.webp);
+}
+/* .hero-wrap {
+    width: 100%;
+    height: 40rem;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.hero-wrap::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.4;
+}
+.hero-wrap iframe {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
