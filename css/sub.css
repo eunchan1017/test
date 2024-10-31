@@ -154,3 +154,87 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 } */
+.visual {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 10rem;
+}
+.visual .visual-img {
+    width: 35rem;
+    aspect-ratio: 7/10 !important;
+    /* height: 50rem; */
+}
+.visual .info-wrap {
+    text-align: center;
+}
+.visual .info-wrap .job {
+    font-weight: 700;
+    font-size: 2.4rem;
+}
+.visual .info-wrap h2 {
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--main-color);
+    padding-top: 2rem;
+}
+.visual .info-wrap .comment {
+    font-weight: 700;
+    font-size: 3rem;
+    padding-top: 1rem;
+}
+.visual .info-wrap .feature {
+    font-size: 2.4rem;
+    padding-top: 2rem;
+}
+.visual .info-wrap .food {
+    font-size: 2.4rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    padding-top: 1rem;
+}
+.visual .info-wrap .food b {
+    display: block;
+    width: 4rem;
+    aspect-ratio: 1/1;
+}
+.visual .info-wrap .status {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    font-size: 2.4rem;
+}
+.visual .info-wrap .status figure {
+    width: 7rem;
+    aspect-ratio: 1/1;
+}
+#stroy {
+    width: 100%;
+    margin-top: 20rem;
+}
+.sec-title {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+}
+#stroy p {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+#stroy p > a {
+    color: var(--main-color);
+    font-weight: 700;
+}
+#stroy .video-wrap {
+    width: 100rem;
+    aspect-ratio: 16/9;
+    margin: 8rem auto;
+}
