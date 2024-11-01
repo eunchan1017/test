@@ -110,3 +110,6 @@ introBtnClose.on("click", () => {
     introDim.fadeOut();
     introVideoWrap.removeClass("active");
 });
+const $tabMenu = $("");
+/** index값에 active 주는 함수 */
+function tab(index) {}

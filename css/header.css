@@ -1,4 +1,9 @@
 @charset 'utf-8';
+.inner {
+    width: 73.95833333333333%;
+    margin: 0 auto;
+    /* background: #f55; */
+}
 #header {
     position: absolute;
     width: 100%;

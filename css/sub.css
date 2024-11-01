@@ -1,6 +1,6 @@
 @charset "utf-8";
 #sub {
-    background: #444;
+    background: #111;
     width: 100%;
     min-height: 100vw;
     padding-top: 1rem;
@@ -8,12 +8,12 @@
 body {
     perspective: 1000px;
 }
-.inner {
-    width: 90%;
+#sub .inner {
+    width: 100rem;
     margin: 0 auto;
 }
 #character {
-    width: 70%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -237,4 +237,189 @@ body {
     width: 100rem;
     aspect-ratio: 16/9;
     margin: 8rem auto;
+}
+.skill-tree {
+    margin-top: 40rem;
+}
+.skill-tree .sec-title {
+    display: flex;
+    justify-content: center;
+}
+.skill-tab-list {
+    display: flex;
+    justify-content: center;
+}
+.skill-tab-list li {
+    width: 20%;
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 3rem 0;
+    font-weight: 700;
+
+    padding: 5px 30px;
+    border-bottom: 1px solid #fff;
+}
+.skill-tab-list li.active {
+    border: 1px solid #fff;
+    border-bottom: 0px solid #fff;
+}
+.torch {
+    width: 100%;
+    /* display: none; */
+}
+.skill > .title-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.skill .black- {
+    color: #fff;
+    background: #000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 2rem;
+    /* border: 1px solid #fff; */
+    padding: 5px 1rem;
+}
+.skill .gray- {
+    color: #fff;
+    background: gray;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    /* font-size: 2rem; */
+    /* border: 1px solid #fff; */
+    padding: 5px 1rem;
+}
+.skill .skill-list-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.black-2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    padding: 5px 1rem;
+}
+.skill .skill-contents {
+    width: 100%;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    border: 1px solid #000;
+    text-align: center;
+    gap: 0.5rem;
+}
+.skill .skill-contents .content {
+    color: #000;
+}
+.skill-contents-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 공통 skill table css */
+.skill {
+    width: 100%;
+}
+.skill-table {
+    width: 100%;
+}
+.skill .tab-th {
+    background: #000;
+    padding: 5px 10px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    border-left: 1px solid #fff;
+}
+.skill .tab-th:first-child {
+    border-left: 0px solid #fff;
+}
+.skill .sub-th {
+    color: #fff;
+    background: #000;
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 5px 1rem;
+    /* border: 1px solid #fff; */
+}
+.skill .sub-td {
+    color: #fff;
+    background: #000;
+    font-weight: 700;
+    padding: 5px 1rem;
+}
+.skill td {
+    padding: 5px 10px;
+    border: 1px solid #000;
+    background: #fff;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+}
+.skill td .content {
+    color: #000;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+}
+.skill td > figure {
+    display: inline-flex;
+    aspect-ratio: 1/1;
+}
+.skill td .content span {
+    display: inline-flex;
+    width: 2.5rem;
+    aspect-ratio: 1/1;
+}
+.skill .gray {
+    font-weight: 700;
+    padding: 5px 10px;
+}
+.skill .black {
+}
+.gray {
+    color: #fff !important;
+    background: gray !important;
+    /* border: 1px solid #fff; */
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    color: #000;
+    background: #fff;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.alchemy-table {
+    width: 100%;
+}
+.beard-table tr .line {
+    border-right: 1px solid #fff;
+}
+.affinity-table .line {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.affinity-table .line + .line {
+    border-right: 0px solid #fff;
 }
