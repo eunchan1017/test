@@ -9,7 +9,7 @@ body {
     perspective: 1000px;
 }
 #sub .inner {
-    width: 100rem;
+    width: 52.08333333333333%;
     margin: 0 auto;
 }
 #character {
@@ -234,12 +234,12 @@ body {
     font-weight: 700;
 }
 #stroy .video-wrap {
-    width: 100rem;
+    width: 100%;
     aspect-ratio: 16/9;
     margin: 8rem auto;
 }
 .skill-tree {
-    margin-top: 40rem;
+    margin-top: 20rem;
 }
 .skill-tree .sec-title {
     display: flex;
@@ -255,7 +255,7 @@ body {
     font-size: 2.4rem;
     margin: 3rem 0;
     font-weight: 700;
-
+    cursor: pointer;
     padding: 5px 30px;
     border-bottom: 1px solid #fff;
 }
@@ -294,7 +294,8 @@ body {
     justify-content: center;
     font-weight: 700;
     /* font-size: 2rem; */
-    /* border: 1px solid #fff; */
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
     padding: 5px 1rem;
 }
 .skill .skill-list-wrap {
@@ -360,11 +361,11 @@ body {
 .skill .sub-td {
     color: #fff;
     background: #000;
-    font-weight: 700;
+    font-weight: 500;
     padding: 5px 1rem;
 }
 .skill td {
-    padding: 5px 10px;
+    padding: 10px;
     border: 1px solid #000;
     background: #fff;
     color: #000;
@@ -422,4 +423,87 @@ body {
 }
 .affinity-table .line + .line {
     border-right: 0px solid #fff;
+}
+.characteristic .content-wrap {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+.content-wrap .pic {
+    width: 22%;
+    aspect-ratio: 299/666;
+}
+.character-wrap {
+    width: 65%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.character-wrap dl dt {
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding: 1rem;
+}
+.character-wrap dl dd {
+    font-size: 2rem;
+    line-height: 1.6;
+}
+.character-wrap dl dd strong {
+    color: var(--main-color);
+}
+.char-push {
+    padding: 20rem 0;
+}
+.char-push-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    align-items: center;
+}
+.char-push-wrap figure {
+    width: 40%;
+    aspect-ratio: 7/10;
+}
+.char-push-info {
+    text-align: center;
+}
+.char-push-info .status {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2.4rem;
+}
+.char-push-info .status .status-info figure {
+    width: 8rem;
+    aspect-ratio: 1/1;
+}
+.char-push-info .tier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    margin-top: 2rem;
+}
+.char-push-info .tier h5 {
+    font-size: 16rem;
+    font-weight: 700;
+    color: var(--main-color);
+    line-height: 1;
+}
+.char-push-info .tier p {
+    font-size: 3rem;
+    font-weight: 700;
+}
+.char-push-info .add-info {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    text-align: left;
 }

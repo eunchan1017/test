@@ -23,10 +23,9 @@ let raf;
 function getOffset() {
     // 마우스가 움직이면 좌표를 구하고 시작점을 화면의 정중앙으로 세팅
     $window.on("mousemove", (e) => {
-        // x = e.pageX - Math.max(-100, Math.min(100, e.pageX - $window.innerWidth() / 2));
-        // y = e.pageY - Math.max(-10, Math.min(50, e.pageY - $window.outerHeight() / 2));
-        x = e.pageX - $window.outerWidth() / 2;
-        y = e.pageY - $window.outerHeight() / 2;
+        x = Math.max(-100, Math.min(100, e.pageX - $window.innerWidth() / 2));
+        y = Math.max(-50, Math.min(50, e.pageY - $window.innerHeight() / 2));
+        console.log(x, y);
     });
 }
 // 움직임 구현
@@ -50,7 +49,7 @@ function moving() {
         transform: `translate3d(${mx * 0.5}px,0px,${mx * 0.05}px)`,
     });
     heroLogo.css({
-        transform: `translate(-50%,${my * 0.8}px)`,
+        transform: `translate(-50%,${mx * 0.8}px)`,
     });
 }
 
@@ -110,6 +109,3 @@ introBtnClose.on("click", () => {
     introDim.fadeOut();
     introVideoWrap.removeClass("active");
 });
-const $tabMenu = $("");
-/** index값에 active 주는 함수 */
-function tab(index) {}
