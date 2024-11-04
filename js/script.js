@@ -23,7 +23,7 @@ let raf;
 function getOffset() {
     // 마우스가 움직이면 좌표를 구하고 시작점을 화면의 정중앙으로 세팅
     $window.on("mousemove", (e) => {
-        x = Math.max(-50, Math.min(50, e.pageX - $window.innerWidth() / 2));
+        x = Math.max(-20, Math.min(20, e.pageX - $window.innerWidth() / 2));
         y = Math.max(-100, Math.min(100, e.pageY - $window.innerHeight() / 2));
         // console.log(x, y);
     });
@@ -40,7 +40,7 @@ function moving() {
 
     // 대상에 적용
     wilson.css({
-        transform: `translate3d(${-mx * 2}px, ${-my * 0.8}px, ${my}px)`,
+        transform: `translate3d(${mx * 2}px, ${my * 0.8}px, ${my}px)`,
     });
     willow.css({
         transform: `translate3d(${-mx * 2}px, ${-my * 0.8}px, ${mx}px)`,
