@@ -56,8 +56,8 @@ body {
     transform: rotate(225deg);
     width: 30px;
     height: 30px;
-    border-top: 5px solid #000;
-    border-right: 5px solid #000;
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
 }
 #character .btn-next {
     position: absolute;
@@ -67,8 +67,8 @@ body {
     transform: rotate(45deg);
     width: 30px;
     height: 30px;
-    border-top: 5px solid #000;
-    border-right: 5px solid #000;
+    border-top: 5px solid #fff;
+    border-right: 5px solid #fff;
 }
 #character .btn-next.swiper-button-disabled,
 #character .btn-prev.swiper-button-disabled {

@@ -23,14 +23,14 @@ let raf;
 function getOffset() {
     // 마우스가 움직이면 좌표를 구하고 시작점을 화면의 정중앙으로 세팅
     $window.on("mousemove", (e) => {
-        x = Math.max(-100, Math.min(100, e.pageX - $window.innerWidth() / 2));
-        y = Math.max(-50, Math.min(50, e.pageY - $window.innerHeight() / 2));
-        console.log(x, y);
+        x = Math.max(-50, Math.min(50, e.pageX - $window.innerWidth() / 2));
+        y = Math.max(-100, Math.min(100, e.pageY - $window.innerHeight() / 2));
+        // console.log(x, y);
     });
 }
 // 움직임 구현
 function moving() {
-    let speed = 0.001;
+    let speed = 0.008;
     // 좌표값 보정
     mx += (x - mx) * speed;
     my += (y - my) * speed;
@@ -40,16 +40,16 @@ function moving() {
 
     // 대상에 적용
     wilson.css({
-        transform: `translate3d(${-mx * 0.8}px, ${my * 0.05}px, ${my}px)`,
+        transform: `translate3d(${-mx * 2}px, ${-my * 0.8}px, ${my}px)`,
     });
     willow.css({
-        transform: `translate3d(${mx * 0.8}px, ${my * 0.05}px, ${mx}px)`,
+        transform: `translate3d(${-mx * 2}px, ${-my * 0.8}px, ${mx}px)`,
     });
     $background.css({
-        transform: `translate3d(${mx * 0.5}px,0px,${mx * 0.05}px)`,
+        transform: `translate3d(${mx * 1}px,0px,${mx * 0.05}px)`,
     });
     heroLogo.css({
-        transform: `translate(-50%,${mx * 0.8}px)`,
+        transform: `translate(-50%,${my * 0.08 - 50}%)`,
     });
 }
 

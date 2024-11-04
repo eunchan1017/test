@@ -41,6 +41,9 @@
     font-size: 2rem;
     font-family: "MapoBackpacking";
 }
+#header .gnb li a:hover {
+    opacity: 0.5;
+}
 #header .util-menu {
     display: flex;
     gap: 1rem;
