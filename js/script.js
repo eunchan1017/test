@@ -34,7 +34,7 @@ function moving() {
     // 좌표값 보정
     mx += (x - mx) * speed;
     my += (y - my) * speed;
-    console.log(mx, my);
+    // console.log(mx, my);
     // 부드럽게 반복
     raf = requestAnimationFrame(moving);
 
@@ -57,7 +57,9 @@ function initAnimation() {
     getOffset();
     moving();
 }
-initAnimation();
+
+if ($window.innerWidth() > 1100) initAnimation();
+
 // 비디오 리스트를 선택했을 때
 $videoItem.on("click", function () {
     // console.log($videoItem, $(this));
