@@ -23,7 +23,7 @@ let raf;
 function getOffset() {
     // 마우스가 움직이면 좌표를 구하고 시작점을 화면의 정중앙으로 세팅
     $window.on("mousemove", (e) => {
-        x = Math.max(-20, Math.min(20, e.pageX - $window.innerWidth() / 2));
+        x = Math.max(-10, Math.min(10, e.pageX - $window.innerWidth() / 2));
         y = Math.max(-100, Math.min(100, e.pageY - $window.innerHeight() / 2));
         // console.log(x, y);
     });
