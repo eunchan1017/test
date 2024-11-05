@@ -1,0 +1,43 @@
+@charset 'utf-8';
+@media screen and (max-width: 1420px) {
+    #feature .pagination {
+        bottom: 10%;
+    }
+    #feature .sec-title {
+        margin-bottom: 4rem;
+    }
+    #feature .btn-next {
+        width: 6rem;
+    }
+    #feature .btn-prev {
+        width: 6rem;
+    }
+
+    .feature-list {
+        aspect-ratio: 460/360;
+    }
+}
+@media screen and (max-width: 1250px) {
+    #feature .sec-title {
+        margin-bottom: 2rem;
+    }
+    #feature .btn-next {
+        right: 6rem;
+    }
+    #feature .btn-prev {
+        left: 6rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    #intro figure {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 900px) {
+    #feature .btn-next {
+        right: 4rem;
+    }
+    #feature .btn-prev {
+        left: 4rem;
+    }
+}

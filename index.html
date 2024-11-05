@@ -11,11 +11,20 @@
         <link rel="stylesheet" href="./css/footer.css" />
         <link rel="stylesheet" href="./css/common.css" />
         <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./css/main-rwd.css" />
+        <link rel="stylesheet" href="./css/header-rwd.css" />
         <script src="./js/jquery-3.7.1.min.js"></script>
         <script src="./js/swiper.js" defer></script>
         <script src="./js/script.js" defer></script>
     </head>
     <body>
+        <div class="menu-screen">
+            <div class="search">
+                <input type="text" placeholder="검색어를 입력해주세요." />
+                <div class="ico-search"></div>
+            </div>
+            <h2 class="menu-logo"></h2>
+        </div>
         <div class="popup-wrap">
             <div class="intro-dim"></div>
             <div class="intro-video-wrap">
@@ -50,6 +59,14 @@
                     <div class="util-menu">
                         <a href=""><img src="./img/util-menu-user.png" alt="util-menu-user" /></a>
                         <a href=""><img src="./img/util-menu-search.png" alt="util-menu-search" /></a>
+                        <div class="menu">
+                            <input type="checkbox" id="hamburger" />
+                            <label for="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </label>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -81,7 +98,7 @@
                             <iframe
                                 src="https://www.youtube.com/embed/bVbyn7c1X6E?controls=0&modestbranding=1&fs=0&rel=0&autoplay=1&mute=1&loop=1"
                                 title="YouTube video player"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; mute;"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;loop; picture-in-picture; web-share; mute;"
                                 referrerpolicy="strict-origin-when-cross-origin"
                                 allowfullscreen
                             ></iframe>
@@ -121,7 +138,7 @@
                                 <div class="feature-list">
                                     <figure><img src="./img/feature3.jpg" alt="feature-img" /></figure>
                                     <h4>계절의 변화</h4>
-                                    <p>게임 내에서 계절의 변화가 생존 전략에 큰 영향을 미칩니다.</p>
+                                    <p>게임 내에서 계절의 변화가 생존 전략에 큰 영향을 미칩니다. 겨울을 대비하세요.</p>
                                 </div>
                             </div>
                             <div class="swiper-slide" data-background="./img/feature4.webp">
@@ -167,16 +184,16 @@
                             </div>
                         </div>
                     </div>
+                    <div class="pagination"></div>
                 </div>
-                <div class="pagination"></div>
                 <div class="btn-prev"></div>
                 <div class="btn-next"></div>
             </section>
             <section id="character">
                 <h3 class="sec-title">character</h3>
                 <div class="inner character-wrap">
-                    <div class="btn-prev"></div>
-                    <div class="btn-next"></div>
+                    <!-- <div class="btn-prev"></div>
+                    <div class="btn-next"></div> -->
                     <div class="swiper character-screen">
                         <div class="swiper-wrapper">
                             <!-- Slides -->

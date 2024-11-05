@@ -23,8 +23,8 @@ let raf;
 function getOffset() {
     // 마우스가 움직이면 좌표를 구하고 시작점을 화면의 정중앙으로 세팅
     $window.on("mousemove", (e) => {
-        x = Math.max(-10, Math.min(10, e.pageX - $window.innerWidth() / 2));
-        y = Math.max(-100, Math.min(100, e.pageY - $window.innerHeight() / 2));
+        x = Math.max(-40, Math.min(40, e.pageX - $window.innerWidth() / 2));
+        y = Math.max(-40, Math.min(40, e.pageY - $window.innerHeight() / 2));
         // console.log(x, y);
     });
 }
@@ -58,7 +58,7 @@ function initAnimation() {
     moving();
 }
 
-if ($window.innerWidth() > 1100) initAnimation();
+if ($window.outerWidth() > 1280) initAnimation();
 
 // 비디오 리스트를 선택했을 때
 $videoItem.on("click", function () {
@@ -88,7 +88,7 @@ const targetPos = $("#intro").offset().top;
 //스크롤이 발생하면
 $window.on("scroll", function () {
     const scrollTop = $(this).scrollTop();
-    console.log(targetPos, scroll);
+    // console.log(targetPos, scroll);
     // 스크롤 값이 scroll-area의 위치 값보다 커지면 애니메이션 중지
     if (scrollTop >= targetPos) cancelAnimationFrame(raf);
     // 상단으로 이동하면 애니메이션 실행

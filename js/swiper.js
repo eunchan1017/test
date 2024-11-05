@@ -1,7 +1,6 @@
 const featureSlider = new Swiper(".feature-slider", {
     loop: true,
-    slidesPerView: 3,
-    spaceBetween: 40,
+    slidesPerView: 1,
     centeredSlides: true,
     pagination: {
         el: "#feature .pagination",
@@ -10,6 +9,16 @@ const featureSlider = new Swiper(".feature-slider", {
     navigation: {
         nextEl: "#feature .btn-next",
         prevEl: "#feature .btn-prev",
+    },
+    breakpoints: {
+        700: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+        },
+        1420: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
     },
     on: {
         init: function () {
@@ -23,8 +32,16 @@ const featureSlider = new Swiper(".feature-slider", {
 var characterSelect = new Swiper(".character-select", {
     loop: true,
     // spaceBetween: 10,
-    slidesPerView: 6,
+    slidesPerView: 4,
     freeMode: true,
+    breakpoints: {
+        700: {
+            slidesPerView: 5,
+        },
+        1420: {
+            slidesPerView: 6,
+        },
+    },
     watchSlidesProgress: false,
     allowTouchMove: false,
 });

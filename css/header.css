@@ -48,3 +48,58 @@
     display: flex;
     gap: 1rem;
 }
+#header .util-menu .menu {
+    display: none;
+}
+/* hamburger바 디자인 */
+input[id="hamburger"] {
+    display: none;
+}
+input[id="hamburger"] + label {
+    display: block;
+    width: 4rem;
+    height: 3rem;
+    position: relative;
+    cursor: pointer;
+}
+input[id="hamburger"] + label span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 30px;
+    background: #fff;
+    transition: all 0.35s;
+}
+input[id="hamburger"] + label span:nth-child(1) {
+    top: 0;
+}
+input[id="hamburger"] + label span:nth-child(2) {
+    top: 50%;
+    left: 30%;
+    transform: translateY(-50%);
+    width: 70%;
+}
+input[id="hamburger"] + label span:nth-child(3) {
+    bottom: 0;
+}
+input[id="hamburger"]:checked + label {
+    z-index: 99;
+}
+input[id="hamburger"]:checked + label span {
+    background: #fff;
+}
+input[id="hamburger"]:checked + label span:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+input[id="hamburger"]:checked + label span:nth-child(2) {
+    opacity: 0;
+}
+input[id="hamburger"]:checked + label span:nth-child(3) {
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+.menu-screen {
+    display: none;
+}

@@ -1,0 +1,13 @@
+@charset 'utf-8';
+@media screen and (max-width: 1280px) {
+    .inner {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #header .gnb {
+        display: none;
+    }
+    #header .util-menu .menu {
+        display: block;
+    }
+}
