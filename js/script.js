@@ -58,7 +58,9 @@ function initAnimation() {
     moving();
 }
 
-if ($window.outerWidth() > 1280) initAnimation();
+if ($window.outerWidth() > 1280) {
+    initAnimation();
+}
 
 // 비디오 리스트를 선택했을 때
 $videoItem.on("click", function () {
