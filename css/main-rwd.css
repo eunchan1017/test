@@ -1,7 +1,7 @@
 @charset 'utf-8';
 @media screen and (max-width: 1420px) {
     #feature .pagination {
-        bottom: 10%;
+        bottom: 9%;
     }
     #feature .sec-title {
         margin-bottom: 4rem;
@@ -18,19 +18,48 @@
         justify-content: center;
         gap: 1rem;
     }
+    #character .btn-next {
+        right: 14%;
+    }
+    #character .btn-prev {
+        left: 14%;
+    }
 }
-@media screen and (max-width: 1250px) {
+@media screen and (max-width: 1280px) {
     #feature .sec-title {
         margin-bottom: 2rem;
     }
     #feature .btn-next {
-        right: 6rem;
+        top: 90%;
+        right: 20%;
     }
     #feature .btn-prev {
-        left: 6rem;
+        top: 90%;
+        left: 20%;
     }
     #hero {
         height: 100vh;
+    }
+    #hero .willow {
+        top: 50%;
+        width: 45vw;
+        right: -10rem;
+    }
+    #hero .wilson {
+        top: 50%;
+        width: 45vw;
+        left: -10rem;
+    }
+    .hero-logo {
+        width: 30vw;
+    }
+    #character {
+        height: 100vh;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media screen and (max-width: 1000px) {

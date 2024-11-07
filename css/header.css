@@ -33,6 +33,9 @@
     display: flex;
     justify-content: space-between;
 }
+#header .gnb.on {
+    display: none;
+}
 #header .gnb li a {
     display: block;
     width: 10rem;
@@ -47,10 +50,20 @@
 #header .util-menu {
     display: flex;
     gap: 1rem;
+    transition: 0.4s;
 }
-#header .util-menu .menu {
+#header .util-menu.on .menu {
+    position: fixed;
+    right: 5%;
+}
+#header .util-menu.on a {
     display: none;
 }
+#header .util-menu .menu {
+    /* display: none; */
+    position: relative;
+}
+
 /* hamburger바 디자인 */
 input[id="hamburger"] {
     display: none;
@@ -101,5 +114,65 @@ input[id="hamburger"]:checked + label span:nth-child(3) {
     transform: translateY(50%) rotate(-45deg);
 }
 .menu-screen {
-    display: none;
+    position: fixed;
+    right: -100%;
+    width: 28vw;
+    height: 100vh;
+    background: #000;
+    z-index: 10;
+    transition: 0.4s;
+}
+.menu-screen.on {
+    right: 0;
+}
+.menu-logo {
+    width: 20rem;
+    aspect-ratio: 1/1;
+    background: url(../img/logo-main.png) no-repeat 50% / cover;
+    margin: 5rem auto;
+}
+.menu-gnb {
+    margin: 6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+.menu-gnb li a {
+    font-size: 2.4rem;
+    font-family: "MapoBackpacking";
+}
+.menu-gnb li a:hover {
+    opacity: 0.5;
+}
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 2rem;
+    font-family: "MapoBackpacking";
+}
+.login li :hover {
+    opacity: 0.5;
+}
+
+.menu-screen .search {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+.menu-screen .search .btn-search {
+    display: block;
+    background: url(../img/util-menu-search.png) no-repeat 0 / cover;
+    width: 3rem;
+    aspect-ratio: 1/1;
+}
+.search-txt {
+    width: 20rem;
+    padding: 5px 1rem;
+    border-radius: 2px;
 }

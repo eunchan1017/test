@@ -1,4 +1,4 @@
-// 대상을 변수에 저장
+// 대상을 변수에 저장+
 const $window = $(window);
 const $dim = $("#trailer .dim");
 const $videoWrap = $(".video-wrap");
@@ -9,6 +9,29 @@ const $background = $("#hero .background");
 const wilson = $("#hero .wilson");
 const willow = $("#hero .willow");
 const heroLogo = $("#hero .hero-logo");
+
+// ... existing code ...
+
+// const menuBar = $(".util-menu .menu");
+const menuScreen = $(".menu-screen");
+const hamburger = $("#hamburger");
+const location = $("#header .util-menu");
+const gnb = $(".gnb");
+
+// change 이벤트를 click 이벤트로 변경
+hamburger.on("click", function () {
+    // 체크박스의 상태를 직접 토글
+    const isChecked = $(this).prop("checked");
+    if (isChecked) {
+        menuScreen.addClass("on");
+        gnb.addClass("on");
+    } else {
+        menuScreen.removeClass("on");
+        gnb.removeClass("on");
+    }
+});
+
+// ... existing code ...
 
 // 마우스 좌표값
 let x = 0;

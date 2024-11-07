@@ -94,7 +94,7 @@
     user-select: initial;
 }
 .intro-video-wrap .video {
-    width: 128rem;
+    width: 66.6666vw;
     aspect-ratio: 16/9;
 }
 .intro-video-wrap .video iframe {
@@ -301,24 +301,24 @@
 
 .character-name h4 {
     font-size: 2.8rem;
-    font-family: "MapoBackpacking", serif;
+    font-family: "MapoBackpacking";
     color: var(--main-color);
 }
 .character-name p {
     font-size: 2.4rem;
-    font-family: "MapoBackpacking", serif;
+    font-family: "MapoBackpacking";
 }
 .character-info-wrap > .character-comment {
     font-size: 2rem;
     margin-top: 1rem;
-    font-family: "MapoBackpacking", serif;
+    font-family: "MapoBackpacking";
 }
 .character-info-wrap .character-feature {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    font-family: "MapoBackpacking", serif;
+    font-family: "MapoBackpacking";
     font-size: 2rem;
 }
 .character-info-wrap .ico-img {
@@ -355,7 +355,7 @@
 #character .btn-prev {
     position: absolute;
     top: 50%;
-    left: 45rem;
+    left: 18%;
     transform: rotate(180deg);
     width: 8rem;
     height: 8rem;
@@ -366,7 +366,7 @@
 #character .btn-next {
     position: absolute;
     top: 50%;
-    right: 45rem;
+    right: 18%;
     transform: rotate(0deg);
     width: 8rem;
     height: 8rem;
