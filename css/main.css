@@ -653,6 +653,7 @@
     color: #000;
 }
 #reviews .nickname {
+    font-family: "MapoBackpacking";
     font-weight: 700;
     font-size: 2rem;
     padding-top: 1rem;
