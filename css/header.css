@@ -49,19 +49,25 @@
 }
 #header .util-menu {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     transition: 0.4s;
 }
 #header .util-menu.on .menu {
     position: fixed;
     right: 5%;
+    top: 28px;
 }
-#header .util-menu.on a {
+
+#header .util-menu.on .icon {
     display: none;
 }
 #header .util-menu .menu {
     /* display: none; */
-    position: relative;
+    position: absolute;
+    transition: 0.4s;
+    right: 10%;
+
+    /* top: 20%; */
 }
 
 /* hamburger바 디자인 */

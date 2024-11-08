@@ -11,9 +11,7 @@ $(function () {
     const willow = $("#hero .willow");
     const heroLogo = $("#hero .hero-logo");
 
-    // ... existing code ...
-
-    // const menuBar = $(".util-menu .menu");
+    const menuBar = $(".util-menu .menu");
     const menuScreen = $(".menu-screen");
     const hamburger = $("#hamburger");
     const location = $("#header .util-menu");
@@ -26,13 +24,13 @@ $(function () {
         if (isChecked) {
             menuScreen.addClass("on");
             gnb.addClass("on");
+            location.addClass("on");
         } else {
             menuScreen.removeClass("on");
             gnb.removeClass("on");
+            location.removeClass("on");
         }
     });
-
-    // ... existing code ...
 
     // 마우스 좌표값
     let x = 0;
