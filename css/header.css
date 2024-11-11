@@ -7,7 +7,7 @@
 #header {
     position: absolute;
     width: 100%;
-    z-index: 10;
+    z-index: 11;
 }
 #header nav {
     width: 100%;
@@ -22,7 +22,7 @@
 #header .logo a:nth-child(1) {
     display: block;
     width: 5rem;
-    height: 5rem;
+    aspect-ratio: 1/1;
 }
 #header .logo a {
     display: block;
@@ -63,9 +63,9 @@
 }
 #header .util-menu .menu {
     /* display: none; */
-    position: absolute;
+    position: relative;
     transition: 0.4s;
-    right: 10%;
+    /* right: 10%; */
 
     /* top: 20%; */
 }
@@ -125,7 +125,7 @@ input[id="hamburger"]:checked + label span:nth-child(3) {
     width: 28vw;
     height: 100vh;
     background: #000;
-    z-index: 10;
+    z-index: 11;
     transition: 0.4s;
 }
 .menu-screen.on {

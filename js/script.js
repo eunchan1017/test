@@ -135,4 +135,6 @@ $(function () {
         introDim.fadeOut();
         introVideoWrap.removeClass("active");
     });
+
+    const introTitle = $("#intro .sec-title");
 });

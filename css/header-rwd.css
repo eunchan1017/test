@@ -9,5 +9,14 @@
     }
     #header .util-menu .menu {
         display: block;
+        position: relative;
+    }
+    #header .logo a:nth-child(1) {
+        width: 4rem;
+        height: 4rem;
+    }
+    #header .logo a {
+        width: 16rem;
+        height: 4rem;
     }
 }
